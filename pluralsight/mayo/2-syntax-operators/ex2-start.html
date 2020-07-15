@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Switch Statement Samples</title>
+    </head>
+
+    <body>
+        <button onclick="blockScopeProblem();">Block scope problem</button>
+        <br>
+        <button onclick="blockScopeFix();">Block scope fix</button>
+        <script>
+            // function blockScopeProblem() {
+            //     let productId = 2;
+
+            //     switch(productId) {
+            //         case 1:
+            //             let message = "HL Road Frame - Black, 58";
+            //             console.log(message);
+            //             break;
+            //         case 2:
+            //             let message = "Sport-100 Helmet, Red";
+            //             console.log(message);
+            //             break;
+            //         case 3:
+            //             let message = "Mountain Bike Socks, M";
+            //             console.log(message);
+            //             break;
+            //         default:
+            //             let message = "Unknown product";
+            //             console.log(message);
+            //             break;
+            //     }
+            // }
+
+            function blockScopeFix() {
+                let productId = 2;
+
+                switch(productId) {
+                    case 1: {
+                        let message = "HL Road Frame - Black, 58";
+                        console.log(message);
+                        break;
+                    }
+                    case 2: {
+                        let message = "Sport-100 Helmet, Red";
+                        console.log(message);
+                        break;
+                    }
+                    case 3: {
+                        let message = "Mountain Bike Socks, M";
+                        console.log(message);
+                        break;
+                    }
+                    default: {
+                        let message = "Unknown product";
+                        console.log(message);
+                        break;
+                    }
+                }
+            }            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+        
+    </head>
+    <body>
+        <button onclick="labelSample();">Labeled statement</button>
+
+        <script>
+            'use strict';
+
+            // NOTE: I don't recommend use of labels as this leads to spaghetti code
+            function labelSample() {
+                even:
+                for (let index = 1; index <= 10; index++) {
+                    if (index % 2 == 1) {
+                        continue even;
+                    }
+                    console.log(index);
+                }
+            }
+        </script>
+    </body>
+</html>
