@@ -1,0 +1,5 @@
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    border: 2px solid purple;
+}
