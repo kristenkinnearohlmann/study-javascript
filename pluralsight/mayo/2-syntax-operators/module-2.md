@@ -2,7 +2,7 @@
 
 ## Intro
 
-## Swith
+## Switch
 - use instead of multiple ```if...else``` statements
 - use case statements to compare to expression in swith(exp)
 - need to use the ```break``` statement to avoid fall through

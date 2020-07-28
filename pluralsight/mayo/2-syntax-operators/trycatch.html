@@ -1,0 +1,49 @@
+<html>
+    <button onclick="simpleTryCatch();">Simple try..catch</button>
+    <button onclick="finallyCatchSample();">Finally Catch sample</button>
+    <button onclick="finallySuccessSample();">Finally Success sample</button>
+    <script>
+        function simpleTryCatch() {
+            let results;
+
+            try {
+                result = x / 10;
+            }
+            catch (error) {
+                console.log(error.name + ": " + error.message);
+            }
+        }
+
+        function finallyCatchSample() {
+            let result;
+
+            try {
+                console.log("An error will occur.");
+                result = x / 10;
+                console.log("This line will never run.");
+            }
+            catch (error) {
+                console.log("In the 'Catch' block: " + error.name + ": " + error.message);
+            }
+            finally {
+                console.log("In the 'Finally' block");
+            }
+        }
+
+        function finallySuccessSample() {
+            let result;
+            let x = 100;
+
+            try {
+                console.log("An error won't occurr");
+                result = x / 10;
+            }
+            catch (error) {
+                console.log("In the 'Catch' block: " + error.name + ": " + error.message);
+            }
+            finally {
+                console.log("In the 'Finally' block");
+            }
+        }
+    </script>
+</html>

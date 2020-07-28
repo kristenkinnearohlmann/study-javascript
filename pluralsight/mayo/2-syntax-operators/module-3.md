@@ -1,6 +1,7 @@
 # The Difference Between for/in and for/of loops
 
 ## for/in statement - works on a single object
+- Mozilla: "The for...in statement iterates over all enumerable properties of an object that are keyed by strings (ignoring ones keyed by Symbols)..."
 - iterates over the elements of an object (properties and methods)
 - returns the ```key``` (property/method name)
 - can access the value with ```object[key]```
@@ -42,7 +43,8 @@
 ```
 
 ## for/of statement - works on an iterable object
-- iterates of the values in an iterable object (array, string, etc)
+- Mozilla: "The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects..."
+- iterates iterable objects (array, string, etc)
 - returns the object for each iteration
 - the ```of``` keyword states: iterate over the iterable object, each time through the loop place the object into the variable
 - example with array
