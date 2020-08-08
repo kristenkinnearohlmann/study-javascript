@@ -70,6 +70,14 @@ function calculate(firstOperand, secondOperand, operator) {
     return secondOperand;
 }
 
+function resetCalculator() {
+    calculator.displayValue = '0';
+    calculator.firstOperand = null;
+    calculator.waitingForSecondOperand = false;
+    calculator.operator = null;
+    console.log(calculator);
+}
+
 function updateDisplay() {
     // select the element with class of çalculator-screen'
     const display = document.querySelector('.calculator-screen');
@@ -104,7 +112,8 @@ keys.addEventListener('click',(event) => {
     }
 
     if (target.classList.contains('all-clear')) {
-        console.log('clear', target.value);
+        resetCalculator();
+        updateDisplay();
         return;
     }
 
