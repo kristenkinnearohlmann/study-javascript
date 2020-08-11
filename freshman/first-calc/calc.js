@@ -18,6 +18,11 @@ function inputDigit(digit) {
 }
 
 function inputDecimal(dot) {
+    if (calculator.waitingForSecondOperand === true) {
+        calculator.displayValue = '0.'
+        calculator.waitingForSecondOperand = false;
+        return
+    }
     // If the displayValue property does not contain a decimal point
     if (!calculator.displayValue.includes(dot)) {
         // Append the decimal point
