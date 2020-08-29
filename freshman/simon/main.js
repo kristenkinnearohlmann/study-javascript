@@ -40,12 +40,14 @@ function nextRound() {
     // copy all the elements in the 'sequence' array to 'nextSequence'
     const nextSequence = [...sequence];
     nextSequence.push(nextStep());
+    playRound(nextSequence);
 }
 
 function startGame() {
     startButton.classList.add('hidden');
     info.classList.remove('hidden');
     info.textContent = "Wait for the computer";
+    nextRound();
 }
 
 startButton.addEventListener('click',startGame);
