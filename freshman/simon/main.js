@@ -6,6 +6,13 @@ let level = 0;
 
 const startButton = document.querySelector('.js-start');
 const info = document.querySelector('.js-info');
+const heading = document.querySelector('.js-heading');
+const tileContainer = document.querySelector('.js-container');
+
+function humanTurn(level) {
+    tileContainer.classList.remove('unclickable');
+    info.textContent = `Your turn: ${level} Tap${levl > 1 ? 's' : ''}`;
+}
 
 function activateTile(color) {
     const tile = document.querySelector(`[data-tile='${color}']`);
@@ -37,10 +44,19 @@ function nextStep() {
 function nextRound() {
     level +=1;
 
+    tileContainer.classList.add('unclickable');
+    info.textContent = 'Wait for the computer';
+    heading.textContent = `Level ${level} of 20`;
+
     // copy all the elements in the 'sequence' array to 'nextSequence'
     const nextSequence = [...sequence];
     nextSequence.push(nextStep());
     playRound(nextSequence);
+
+    sequence = [...nextSequence];
+    setTimeout(() => {
+        humanTurn(level);
+    }, level * 600 + 1000);
 }
 
 function startGame() {
@@ -51,3 +67,8 @@ function startGame() {
 }
 
 startButton.addEventListener('click',startGame);
+tileContainer.addEventListener('click', event => {
+    const { tile } = event.target.dataset;
+
+    if (tile) handleClick(tile);
+})
