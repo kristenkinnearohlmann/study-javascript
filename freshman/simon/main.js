@@ -59,6 +59,25 @@ function nextRound() {
     }, level * 600 + 1000);
 }
 
+function handleClick(tile) {
+    const index = humanSequence.push(tile) - 1;
+    const sound = document.querySelector(`[data-sound='${tile}']`);
+    sound.play();
+
+    const remainingTaps = sequence.length - humanSequence.length;
+    console.log(remainingTaps);
+    if (humanSequence.length === sequence.length) {
+        humanSequence = [];
+        info.textContent = 'Sucess! Keep going!';
+        setTimeout(() => {
+            nextRound();
+        }, 1000);
+        return;
+    }
+
+    info.textContent = `Your turn: ${remainingTaps} Tap${remainingTaps > 1 ? 's' : ''}`;
+}
+
 function startGame() {
     startButton.classList.add('hidden');
     info.classList.remove('hidden');
