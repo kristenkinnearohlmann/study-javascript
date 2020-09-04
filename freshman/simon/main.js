@@ -83,6 +83,11 @@ function handleClick(tile) {
     }
     
     if (humanSequence.length === sequence.length) {
+        if (humanSequence.length === 20) {
+            resetGame('Çongrats! You completed all the levels!');
+            return;
+        }
+
         humanSequence = [];
         info.textContent = 'Sucess! Keep going!';
         setTimeout(() => {
