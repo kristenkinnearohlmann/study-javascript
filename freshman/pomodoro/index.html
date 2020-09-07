@@ -1,10 +1,23 @@
 <!-- https://freshman.tech/pomodoro-timer/ -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Freshman Pomodoro Clock Tutorial</title>
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-
+        <main class="app">
+            <progress id="js-progress" value="0"></progress>
+            <div class="progress-bar"></div>
+            <div class="timer">
+                <div class="button-group mode-buttons" id="js-mode-buttons">
+                    <button data-mode="pomodoro" class="button active mode-button" id="js-pomodoro">Pomodoro</button>
+                    <button data-mode="shortBreak" class="button mode-button" id="js-short-break">Short Break</button>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
