@@ -1,3 +1,5 @@
+// Start at The interval variable is set to the setInterval() method which executes the callback function every 1000 milliseconds (1 second). 
+
 const timer = {
     pomodoro: 25,
     shortBreak: 5,
@@ -5,8 +7,25 @@ const timer = {
     longBreakInterval: 4,
 };
 
+let interval;
+
 const modeButtons = document.querySelector('#js-mode-buttons');
 modeButtons.addEventListener('click', handleMode);
+
+function startTimer() {
+    let { total } = timer.remainingTime;
+    const endTime = Date.parse(new Date()) + total * 1000;
+
+    interval = setInterval(function() {
+        timer.remainingTime = getRemainingTime(endTime);
+        updateClock();
+
+        total = timer.remainingTime.total;
+        if (total <= 0) {
+            clearInterval(interval);
+        }
+    }, 1000);
+}
 
 function updateClock() {
     const { remainingTime } = timer;
