@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ArrayofFlat>
+    <Subflat>
+        <name>Name 1</name>
+        <item>Item 1</item>
+    </Subflat>
+    <Subflat>
+        <name>Name 2</name>
+        <item>Item 2</item>
+    </Subflat>
+    <Subflat>
+        <name>Name 3</name>
+        <item>Item 3</item>
+    </Subflat>    
+</ArrayofFlat>
