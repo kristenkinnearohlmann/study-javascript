@@ -49,6 +49,8 @@ function objLiteral() {
 
 - ```apply()``` allows you to pass arguments in addition to the object literal
 - ```this``` will refer to the properties of the object literal passed in even though the method is defined in one product and not the other
+- `call()` allows you to call a method from within an object definition on a specific object, parameters passed separate by comma after the object
+- `apply()` allows you to call a method from within an object definition on a specific object, parameters passed by array after the object
 
 ## ```'this'``` in Constructor Functions
 
