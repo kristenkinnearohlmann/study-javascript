@@ -68,3 +68,54 @@ switch (groceryItem) {
  
 // Prints 'Papayas are $1.29'
 ```
+
+### Function Tidbits
+
+#### Function Declaration
+A function declaration is a function that is bound to an identifier, or name. In the next exercise we’ll go over how to run the code inside the function body.
+
+We should also be aware of the hoisting feature in JavaScript which allows access to function declarations before they’re defined. Since hoisting isn’t considered good practice, we simply want you to be aware of this feature.
+
+#### Function Expression
+Another way to define a function is to use a function expression. To define a function inside an expression, we can use the function keyword. In a function expression, the function name is usually omitted. A function with no name is called an anonymous function. A function expression is often stored in a variable in order to refer to it.
+```JavaScript
+const funcName = function(parm1,parm2) {
+  return true;
+};
+```
+To invoke a function expression, write the name of the variable in which the function is stored followed by parentheses enclosing any arguments being passed into the function.
+```JavaScript
+funcName(arg1,arg2);
+```
+Unlike function declarations, function expressions are not hoisted so they cannot be called before they are defined.
+
+#### Arrow Functions
+ES6 introduced arrow function syntax, a shorter way to write functions by using the special “fat arrow” () => notation.
+
+Arrow functions remove the need to type out the keyword function every time you need to create a function. Instead, you first include the parameters inside the ( ) and then add an arrow => that points to the function body surrounded in { } like this:
+```JavaScript
+const funcName = (parm1, parm2) => {
+  return true;
+}
+```
+
+##### Concise Body Formatting
+1. Parameter declaration
+```JavaScript
+// Zero parameters
+const funcName = () => {};
+// One parameter
+const funcName = parm1 => {};
+// Two or more parms
+const funcName = (parm1,parm2) => {};
+```
+1. Function body
+```JavaScript
+// Single-line block with implicit return
+const sumNumbers = number => number + number;
+// Multi-line block
+const sumNumbers = number => {
+  const sum = number + number;
+  return sum;
+};
+```
