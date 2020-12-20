@@ -119,3 +119,11 @@ const sumNumbers = number => {
   return sum;
 };
 ```
+#### Setting functions to variables
+- Don't include parentheses in the function name when setting to a variable => we want the function itself assigned to the variable, not the return value
+- Invoke the variable with () to invoke the function that is stored in it
+- JS functions are first-class objects and can contain methods and properties => ex. `console.log(functionVar.name) // returns name of original function`
+
+#### Functions as parameters
+-  A _higher-order function_ is a function that either accepts functions as parameters, returns a function, or both! 
+- We call the functions that get passed in as parameters and invoked _callback functions_ because they get called during the execution of the higher-order function.
