@@ -63,3 +63,6 @@ I tried for a while in the morning to solve with set size and codeCharAt but jus
 
 Day 20: Domain Type: https://t.co/Gra0BpmyQ5?amp=1
 I solved this one FAST! If I hadn't deleted a piece of my code instead of a `console.log` statement, it would have been even faster! My mind immediately jumped to an array method that could be used and all I had to do was type it out. I need to keep this success in my list of affirmations for tougher days!
+
+Day 21: Sum of 2: https://t.co/xgLEcUuLrL?amp=1
+I simply could not figure out how to solve this with hasOwnProperty(). I tried running a classic double loop but it just didn't seem to work. I hacked together a solution with forEach and map. It may not be concise but it works to solve the challenge.
