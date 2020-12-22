@@ -66,3 +66,6 @@ I solved this one FAST! If I hadn't deleted a piece of my code instead of a `con
 
 Day 21: Sum of 2: https://t.co/xgLEcUuLrL?amp=1
 I simply could not figure out how to solve this with hasOwnProperty(). I tried running a classic double loop but it just didn't seem to work. I hacked together a solution with forEach and map. It may not be concise but it works to solve the challenge.
+
+Day 22: Extract Matrix Column: https://t.co/fADkiW6ggd?amp=1
+This solution came to me accidentally as I did my normal start of logging out the parameters. It was kind of cool to solve so fast!!
