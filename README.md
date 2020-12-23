@@ -127,3 +127,6 @@ const sumNumbers = number => {
 #### Functions as parameters
 -  A _higher-order function_ is a function that either accepts functions as parameters, returns a function, or both! 
 - We call the functions that get passed in as parameters and invoked _callback functions_ because they get called during the execution of the higher-order function.
+
+## Objects
+for...in will execute a given block of code for each property in an object.
