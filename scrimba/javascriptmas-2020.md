@@ -69,3 +69,6 @@ I simply could not figure out how to solve this with hasOwnProperty(). I tried r
 
 Day 22: Extract Matrix Column: https://t.co/fADkiW6ggd?amp=1  
 This solution came to me accidentally as I did my normal start logging out the parameters. It was kind of cool to solve so fast!!
+
+Day 23: Social media input challenge: https://t.co/9vOx0ioNBd?amp=1
+This looked really hard but I was able to put something working together. Danny Thompson is a smart guy so I felt very challenged!
