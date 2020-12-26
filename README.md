@@ -130,3 +130,18 @@ const sumNumbers = number => {
 
 ## Objects
 for...in will execute a given block of code for each property in an object.
+
+## Arrow functions and this
+Arrow functions inherently bind, or tie, an already defined this value to the function itself that is NOT the calling object. In the code snippet above, the value of this is the global object, or an object that exists in the global scope, which doesn’t have a dietType property and therefore returns undefined.
+
+To read more about either arrow functions or the global object check out the MDN documentation of the [global object](https://developer.mozilla.org/en-US/docs/Glossary/Global_object) and [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
+
+## Property Value Shorthand
+ But we can use a destructuring technique, called property value shorthand, to save ourselves some keystrokes. This allows property assignments with specifying the key-value pair, just the name of the parms.
+
+ ## Destructured Assignment
+ However, we can also take advantage of a destructuring technique called destructured assignment to save ourselves some keystrokes. In destructured assignment we create a variable with the name of an object’s key that is wrapped in curly braces { } and assign to it the object. 
+ ```Javascript
+ const { residence } = vampire; 
+console.log(residence); // Prints 'Transylvania'
+```
