@@ -70,5 +70,13 @@ I simply could not figure out how to solve this with hasOwnProperty(). I tried r
 Day 22: Extract Matrix Column: https://t.co/fADkiW6ggd?amp=1  
 This solution came to me accidentally as I did my normal start logging out the parameters. It was kind of cool to solve so fast!!
 
-Day 23: Social media input challenge: https://t.co/9vOx0ioNBd?amp=1
+Day 23: Social media input challenge: https://t.co/9vOx0ioNBd?amp=1  
 This looked really hard but I was able to put something working together. Danny Thompson is a smart guy so I felt very challenged!
+
+Day 24: Test Your Agility: https://t.co/gfwiJQOKxj?amp=1  
+It took me every day until today (December 28) for my brain to sort out how to solve this. The first day I poked at the challenge fussily. Christmas Day I ignored it entirely. Saturday and Sunday I moodily walked around with a very real fear I wouldn't be able to figure this last one out.  
+Then my brain whispered to look up `async()` functions. I pulled up the MDN tab and looked at it occasionally. Throughout the day, little sparks flickered in my brain - there's probably a loop involved...I'll bet most of the code is there that I need...  
+Today, I decided to give it another try. During the preceding 4 days, my brain had picked up enough pieces and time to resolve into a bright picture in my mind. The actual development of my solution probably took about 10 minutes that stretched about an hour as I iterated through checking for accuracy.  
+I did it!!!  
+
+I'm so very proud of being able to finish all 24 days of the JavaScriptmas challenge. This is the first time I've been able to feel confident enough to tackle a code challenge in any language. I only used what I had learned and Google to solve - no solutions from my talented colleagues - I truly did it my knowledge. I feel encouraged to continue forward on my coding journey knowing that I am gaining, retaining and using knowledge that I have worked hard to acquire.
