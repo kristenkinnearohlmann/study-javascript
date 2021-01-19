@@ -145,3 +145,79 @@ To read more about either arrow functions or the global object check out the MDN
  const { residence } = vampire; 
 console.log(residence); // Prints 'Transylvania'
 ```
+
+## npm and Babel
+
+### Working with npm
+
+#### Initial directory structure
+```
+project
+|_ src
+|___ main.js
+```
+
+#### Procedure
+- Ensure Node is installed on your machine
+- At project root, run `npm init` to create `package.json` file
+- `package.json` includes
+  1. metadata about the project
+  1. list of node packages required for the project
+  1. key-value pairs for command line scripts to be used with npm
+- At minimum, complete the title and description prompts; press enter to skip a field
+
+#### Post directory structure
+```
+project
+|_ src
+|___ main.js
+|_ package.json
+```
+
+### Install Node Packages
+- `install` creates the `node_modules` folder and copies package files to it as well as all the dependencies for the given package
+
+#### Babel install
+- install both of the following
+```
+npm install babel-cli -D
+npm install babel-preset-env -D
+```
+- `-D` flag adds the package to the `devDependencies` in `package.json` so that they will be installed for any developer running `npm install` for that project
+
+#### Post directory structure
+```
+project
+|_ node_modules
+|___ .bin
+|___ ...
+|_ src
+|___ main.js
+|_ package.json
+```
+
+#### Specify JS version
+- create `.babelrc` file at the project root
+- add to file - this instructs Babel to transpile any code from ES6 and later
+```JavaScript
+{
+  "presets": ["env"]
+}
+```
+
+#### Specify script
+- add to `package.json` `scripts` section
+```JavaScript
+...
+"script": {
+  "test": "echo ...".
+  "build": "babel src -d lib" // add to run Babel build; calls Babel, tells the code to transpile the contents of the src folder, write to a directory that is called lib
+}
+```
+
+### Build with Babel transpile
+- run `npm run build`
+- resulting directory creates at root level
+
+## export
+`module.exports` (Node) = `export default` (ES6); requires transpile for everyday use
